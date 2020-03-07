@@ -58,7 +58,6 @@ async function getNews(url){
         var invalidKeyword = document.getElementById("news-section");
         invalidKeyword.innerHTML = "<h3>No article was found based on the search.</h3>";
         invalidKeyword.style.color = "red";
-        invalidKeyword.classList.add("not-found");
      }   
 }  
 
