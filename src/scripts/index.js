@@ -6,16 +6,16 @@ function searchFunction(e){
      var searchedNews = document.getElementById("search").value;
      
     if(e.which==13){
-        console.log(searchedNews);  //for testing
+        console.log(searchedNews); 
         if(searchedNews != ''){
             var searchUrl = `https://newsapi.org/v2/everything?q=${searchedNews}&apiKey=7d51d391c98e4070bf17bd0053cbe9a0`;
             beforeLoad();
             getNews(searchUrl);
         }   
         else{
-            console.log(searchedNews);  //for testing
+            console.log(searchedNews);
             beforeLoad();
-            getNews(url); //by default it fetch news related to india
+            getNews(url); 
         }
     }   
 }
